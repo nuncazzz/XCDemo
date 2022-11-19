@@ -4,8 +4,8 @@ cache_addresses:
 primary_repo: git@github.com:nuncazzz/XCDemo.git
 mode: producer
 primary_branch: main
-xccc_file: ".rc/xccc"
-remote_commit_file: ".rc/arc.rc"
+xccc_file: "../.rc/xccc"
+remote_commit_file: "../.rc/arc.rc"
 prettify_meta_files: false
 disable_certificate_verification: false
 custom_rewrite_envs:

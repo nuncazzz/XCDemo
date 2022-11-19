@@ -3,9 +3,11 @@ platform :ios, '13.0'
 plugin 'cocoapods-xcremotecache'
 
 xcremotecache({
-    'cache_addresses' => ['http://localhost:8080/cache/pods'],
-    'primary_repo' => 'https://your.primary.repo.git',
-    'mode' => 'consumer'
+    'cache_addresses' => ['http://localhost:8080/cache'],
+    'primary_repo' => 'git@github.com:nuncazzz/XCDemo.git',
+    'mode' => 'producer',
+    'final_target' => 'XCRCDemo',
+    'primary_branch' => 'main'
 })
 
 target 'XCRCDemo' do

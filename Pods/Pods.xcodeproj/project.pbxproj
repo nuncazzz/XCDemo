@@ -320,6 +320,7 @@
 			buildPhases = (
 				52E6F7B26483BE3BC9393C6C05D32424 /* Headers */,
 				F5D2A45FBA06D86A537CB441D5BF4FF4 /* Sources */,
+				46EB2E00000850 /* [XCRC] Postbuild Alamofire */,
 				15DC142A7EE833251AA37FC8E2B8E01F /* Frameworks */,
 				E9D4145FA41F60FFAB33A07796D9ED97 /* Resources */,
 			);
@@ -376,6 +377,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46EB2E00000850 /* [XCRC] Postbuild Alamofire */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			dependencyFile = "$(TARGET_TEMP_DIR)/postbuild.d";
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$SRCROOT/../XCRC/xcpostbuild",
+			);
+			name = "[XCRC] Postbuild Alamofire";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(MODULES_FOLDER_PATH)/$(PRODUCT_MODULE_NAME).swiftmodule/$(XCRC_PLATFORM_PREFERRED_ARCH).swiftmodule.md5",
+				"$(TARGET_BUILD_DIR)/$(MODULES_FOLDER_PATH)/$(PRODUCT_MODULE_NAME).swiftmodule/$(XCRC_PLATFORM_PREFERRED_ARCH)-$(LLVM_TARGET_TRIPLE_VENDOR)-$(SWIFT_PLATFORM_TARGET_PREFIX)$(LLVM_TARGET_TRIPLE_SUFFIX).swiftmodule.md5",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SCRIPT_INPUT_FILE_0\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7EC14E78BCC0BA42B7487A3C93F07021 /* Sources */ = {
@@ -459,21 +485,34 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD = "$SRCROOT/../XCRC/xcld";
+				LDPLUSPLUS = "$SRCROOT/../XCRC/xcldplusplus";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBTOOL = "$SRCROOT/../XCRC/xclibtool";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fdebug-prefix-map=$(SRCROOT:dir:standardizepath)=$(XCREMOTE_CACHE_FAKE_SRCROOT)",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -debug-prefix-map $(SRCROOT:dir:standardizepath)=$(XCREMOTE_CACHE_FAKE_SRCROOT)";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_EXEC = "$SRCROOT/../XCRC/xcswiftc";
+				SWIFT_USE_INTEGRATED_DRIVER = NO;
 				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				XCRC_COOCAPODS_ROOT = "$SRCROOT/../";
+				XCRC_PLATFORM_PREFERRED_ARCH = "$(LINK_FILE_LIST_$(CURRENT_VARIANT)_$(PLATFORM_PREFERRED_ARCH):dir:standardizepath:file:default=arm64)";
+				XCREMOTE_CACHE_FAKE_SRCROOT = /xxxxxxxxxx;
 			};
 			name = Debug;
 		};
@@ -697,22 +736,35 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD = "$SRCROOT/../XCRC/xcld";
+				LDPLUSPLUS = "$SRCROOT/../XCRC/xcldplusplus";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBTOOL = "$SRCROOT/../XCRC/xclibtool";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fdebug-prefix-map=$(SRCROOT:dir:standardizepath)=$(XCREMOTE_CACHE_FAKE_SRCROOT)",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -debug-prefix-map $(SRCROOT:dir:standardizepath)=$(XCREMOTE_CACHE_FAKE_SRCROOT)";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_EXEC = "$SRCROOT/../XCRC/xcswiftc";
+				SWIFT_USE_INTEGRATED_DRIVER = NO;
 				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+				XCRC_COOCAPODS_ROOT = "$SRCROOT/../";
+				XCRC_PLATFORM_PREFERRED_ARCH = "$(LINK_FILE_LIST_$(CURRENT_VARIANT)_$(PLATFORM_PREFERRED_ARCH):dir:standardizepath:file:default=arm64)";
+				XCREMOTE_CACHE_FAKE_SRCROOT = /xxxxxxxxxx;
 			};
 			name = Release;
 		};
