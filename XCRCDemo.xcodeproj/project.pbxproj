@@ -169,7 +169,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$SRCROOT/XCRC/xcprepare",
+				$SRCROOT/XCRC/xcprepare,
 			);
 			name = "[XCRC] Mark";
 			outputFileListPaths = (
@@ -189,7 +189,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$SRCROOT/XCRC/xcpostbuild",
+				$SRCROOT/XCRC/xcpostbuild,
 			);
 			name = "[XCRC] Postbuild XCRCDemo";
 			outputFileListPaths = (
@@ -386,13 +386,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD = "$SRCROOT/XCRC/xcld";
-				LDPLUSPLUS = "$SRCROOT/XCRC/xcldplusplus";
+				LD = $SRCROOT/XCRC/xcld;
+				LDPLUSPLUS = $SRCROOT/XCRC/xcldplusplus;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBTOOL = "$SRCROOT/XCRC/xclibtool";
+				LIBTOOL = $SRCROOT/XCRC/xclibtool;
 				MARKETING_VERSION = 1.0;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -402,11 +402,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nunca.XCRCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_EXEC = "$SRCROOT/XCRC/xcswiftc";
+				SWIFT_EXEC = $SRCROOT/XCRC/xcswiftc;
+				SWIFT_SERIALIZE_DEBUGGING_OPTIONS = NO;
 				SWIFT_USE_INTEGRATED_DRIVER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				XCRC_COOCAPODS_ROOT = "$SRCROOT/";
+				XCRC_COOCAPODS_ROOT = $SRCROOT/;
 				XCRC_FAKE_SRCROOT = /xxxxxxxxxx;
 				XCRC_PLATFORM_PREFERRED_ARCH = "$(LINK_FILE_LIST_$(CURRENT_VARIANT)_$(PLATFORM_PREFERRED_ARCH):dir:standardizepath:file:default=arm64)";
 				XCREMOTE_CACHE_FAKE_SRCROOT = /xxxxxxxxxx;
@@ -429,13 +430,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD = "$SRCROOT/XCRC/xcld";
-				LDPLUSPLUS = "$SRCROOT/XCRC/xcldplusplus";
+				LD = $SRCROOT/XCRC/xcld;
+				LDPLUSPLUS = $SRCROOT/XCRC/xcldplusplus;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBTOOL = "$SRCROOT/XCRC/xclibtool";
+				LIBTOOL = $SRCROOT/XCRC/xclibtool;
 				MARKETING_VERSION = 1.0;
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -445,11 +446,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nunca.XCRCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_EXEC = "$SRCROOT/XCRC/xcswiftc";
+				SWIFT_EXEC = $SRCROOT/XCRC/xcswiftc;
+				SWIFT_SERIALIZE_DEBUGGING_OPTIONS = NO;
 				SWIFT_USE_INTEGRATED_DRIVER = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				XCRC_COOCAPODS_ROOT = "$SRCROOT/";
+				XCRC_COOCAPODS_ROOT = $SRCROOT/;
 				XCRC_PLATFORM_PREFERRED_ARCH = "$(LINK_FILE_LIST_$(CURRENT_VARIANT)_$(PLATFORM_PREFERRED_ARCH):dir:standardizepath:file:default=arm64)";
 				XCREMOTE_CACHE_FAKE_SRCROOT = /xxxxxxxxxx;
 			};
